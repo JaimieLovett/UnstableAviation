@@ -1,9 +1,17 @@
-global.camera_shake = 8;
 
 switch(object_index) {
-	case oEnemyGrunt: score += 50; break;
-	case oEnemyHunter: score += 100; break;	
-	case oEnemyTank: score += 200; break;	
+	case oEnemyGrunt: 
+		score += 50;
+		global.camera_shake = 6;
+		break;
+	case oEnemyHunter:
+		score += 100;
+		global.camera_shake = 6;
+		break;	
+	case oEnemyTank:
+		score += 200;
+		global.camera_shake = 8;
+		break;	
 }
 
 if (irandom_range(0, 2) == 0) {

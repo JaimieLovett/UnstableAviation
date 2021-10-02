@@ -13,7 +13,7 @@ if (guns != -1) draw_sprite_ext(
 
 // Draw invincible
 if (invincible) {
-	var alpha = min(alarm[1] / 60);
+	var alpha = min(alarm[3] / 60);
 	
 	draw_sprite_ext(
 		sPlayerPowerupsStrip,
