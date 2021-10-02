@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sAsteroidDebris",
-    "path": "sprites/sAsteroidDebris/sAsteroidDebris.yy",
+    "name": "sAsteroidDebrisStrip",
+    "path": "sprites/sAsteroidDebrisStrip/sAsteroidDebrisStrip.yy",
   },
   "solid": false,
   "visible": true,

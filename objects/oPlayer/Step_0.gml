@@ -32,8 +32,7 @@ if is_shooting {
 	if can_shoot {
 		can_shoot = false;
 		alarm[0] = room_speed * shoot_delay;
-		var _inst = instance_create_layer(x, y, "Instances", oBullet);
-		_inst.direction = image_angle;
+		create_bullet(x, y, image_angle, bullet_speed, faction, id, guns);
 	}
 	
 	// If we're shooting, decelerate the player.
@@ -41,7 +40,21 @@ if is_shooting {
 }
 else {
 	// Move the player.
-	motion_add(image_angle, acceleration);
+	if speed <= max_speed motion_add(image_angle, acceleration);
+	
+	// Particle FX.
+	exhaust_counter++;
+	
+	if (exhaust_counter >= 4) {
+		exhaust_counter = 0;
+		var len = sprite_height * .4;
+		var xx = x - lengthdir_x(len, image_angle);
+		var yy = y - lengthdir_y(len, image_angle);
+
+		with (oParticles) {
+			part_particles_create(part_system, xx, yy, part_type_exhaust, 1);	
+		}
+	}
 }
 
 // Wrap to the other side of the screen if we move off the screen.

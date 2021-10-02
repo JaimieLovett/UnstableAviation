@@ -2,7 +2,7 @@
 event_inherited();
 
 sprite_index = choose(
-	sAsteroidSmall, sAsteroidMedium, sAsteroidLarge, sAsteroidHuge,
+	sAsteroidSmall, sAsteroidMedium, sAsteroidLarge,
 );
 
 direction = irandom_range(0, 359);
