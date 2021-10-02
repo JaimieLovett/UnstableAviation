@@ -26,6 +26,7 @@ switch(room) {
 		break;
 		
 	case rmGameOver:
+		audio_stop_all();
 		draw_set_halign(fa_center);
 		var c = c_red;
 

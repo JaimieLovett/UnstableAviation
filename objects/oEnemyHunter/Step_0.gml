@@ -22,7 +22,7 @@ if point_distance(x, y, oPlayer.x, oPlayer.y) < 250 {
 	// Fire bullet.
 	bullet_counter++;
 	if bullet_counter >= 60 {
-		create_bullet(x, y, image_angle, 8, faction, id, -1);
+		create_bullet(x, y, image_angle, 5, faction, id, -1);
 		bullet_counter = 0;
 	}
 	

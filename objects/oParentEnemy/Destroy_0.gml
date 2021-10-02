@@ -14,9 +14,12 @@ switch(object_index) {
 		break;	
 }
 
-if (irandom_range(0, 2) == 0) {
-	instance_create_layer(x, y, "Instances", oPowerup);	
+if (irandom_range(0, 4) == 0) {
+	instance_create_layer(x, y, "Instances", oPowerup);
+		audio_play_sound(sndPowerupDrop, 3, false);
 }
+
+audio_play_sound(sndShipExplosion, 2, false);
 
 // Particle FX.
 var xx = x;

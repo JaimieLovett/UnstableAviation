@@ -7,10 +7,7 @@ deceleration = 0.02;
 is_shooting = true;
 can_shoot = true;
 
-// shoot_delay will get set to stability * shoot_delay_modifier.
-// The lower the players stability, the faster they will be able to shoot.
 stability = 100;
-shoot_delay_modifier = 0.05;
 shoot_delay = 0.125;
 bullet_speed = 10;
 
