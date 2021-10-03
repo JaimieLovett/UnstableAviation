@@ -1,6 +1,6 @@
 with other {
 	var powerup_type = image_index;
-	audio_play_sound(sndPowerupPickup, 3, false);
+	audio_play_sound(sndPowerupPickup, 2, false);
 	instance_destroy();
 }
 

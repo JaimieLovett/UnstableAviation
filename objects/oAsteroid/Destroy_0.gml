@@ -1,6 +1,5 @@
 if (irandom_range(0, 9) == 0) {
 	instance_create_layer(x, y, "Instances", oPowerup);
-	audio_play_sound(sndPowerupDrop, 3, false);
 }
 
 var xx = x;

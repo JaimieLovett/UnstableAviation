@@ -27,6 +27,7 @@ if keyboard_check(vk_right) image_angle = image_angle - 5;
 
 
 if is_shooting {
+	audio_stop_sound(sndIgnition);
 	// Alarm for reducing stability.
 	if alarm[1] == - 1 {
 		alarm[1] = room_speed * 0.025;	
@@ -36,14 +37,14 @@ if is_shooting {
 		can_shoot = false;
 		alarm[0] = room_speed * shoot_delay;
 		create_bullet(x, y, image_angle, bullet_speed, faction, id, guns);
-		audio_play_sound(sndShoot, 1, false);
+		audio_play_sound(sndShoot, 0, false);
 	}
 	
 	// If we're shooting, decelerate the player.
 	if speed >= 0 speed -= deceleration;
 }
 else {
-	
+	audio_play_sound(sndIgnition, 1, true);
 	if unstable_engine && alarm[1] == -1 alarm[1] = room_speed * 0.025;		
 	// Move the player.
 	motion_add(image_angle, acceleration);
@@ -69,7 +70,7 @@ move_wrap(true,true,sprite_width / 2);
 
 if stability <= 40 {
 	if can_play_unstable_sound {
-		audio_play_sound(sndUnstable, 2, false);
+		audio_play_sound(sndUnstable, 4, false);
 		can_play_unstable_sound = false;
 		alarm[4] = room_speed * 1;
 	}

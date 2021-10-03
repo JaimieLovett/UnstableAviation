@@ -1,12 +1,12 @@
 ///@desc Initialise Rooms
 if (room == rmStart) {
 	audio_stop_sound(sndGameMusic);
-	audio_play_sound(sndIntroMusic, 2, true);
+	audio_play_sound(sndIntroMusic, 50, true);
 }
 else if (room == rmGame) {
 	audio_stop_sound(sndIntroMusic);
 	audio_stop_sound(sndGameOverMusic);
-	audio_play_sound(sndGameMusic, 2, true);
+	audio_play_sound(sndGameMusic, 50, true);
 	
 	global.camera_shake = 0;
 	score = 0;
@@ -22,5 +22,5 @@ else if (room == rmGame) {
 else if (room == rmGameOver) {
 	audio_stop_sound(sndIntroMusic);
 	audio_stop_sound(sndGameMusic);
-	audio_play_sound(sndGameOverMusic, 2, true);
+	audio_play_sound(sndGameOverMusic, 50, true);
 }

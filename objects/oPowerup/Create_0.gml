@@ -1,3 +1,5 @@
+audio_play_sound(sndPowerupDrop, 3, false);
+
 /// @desc Choose frame
 image_index = irandom_range(0, image_number - 1);
 
