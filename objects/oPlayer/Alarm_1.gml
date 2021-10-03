@@ -1,2 +1,2 @@
 /// @desc Decrease stability
-if stability > 0 && is_shooting stability -= 1;
+if stability > 0 stability -= 1;

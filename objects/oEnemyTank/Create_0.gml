@@ -1,5 +1,5 @@
 event_inherited();
 
-HP = 10;
+HP = 5;
 speed = 1;
 image_speed = 0;

@@ -15,7 +15,7 @@ function initialise_bullet(_obj, _x, _y, _dir, _spd, _fac, _creator){
         
         switch(faction){
             case factions.enemy:
-                image_blend = c_red;
+                image_blend = c_fuchsia;
                 break;
                 
             case factions.ally:

@@ -1,4 +1,4 @@
 /// @desc Take damage
-if invincible exit;
+if invincible || shield exit;
 
 instance_destroy();

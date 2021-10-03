@@ -1,3 +1,10 @@
+if (browser_width != width || browser_height != height)
+{
+    width = median(base_width, browser_width);
+    height = median(base_height, browser_height);
+    scale_canvas(base_width, base_height, width, height, true);
+}
+
 // Follow target
 if instance_exists(target) {
 	global.camera_x = target.x - (global.camera_width / 2);

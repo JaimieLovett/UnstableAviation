@@ -12,8 +12,6 @@ function create_bullet(_x, _y, _dir, _spd, _fac, _creator, _gun_type){
     switch(_gun_type){
         case powerups.three_bullets:
             initialise_bullet(oBullet, _x, _y, _dir, _spd, _fac, _creator);
-            // no break
-        case powerups.two_bullets:
             var _sep = 12;
             initialise_bullet(oBullet, _x + lengthdir_x(_sep,_dir + 90), _y+ lengthdir_y(_sep,_dir + 90), _dir, _spd, _fac, _creator);
             initialise_bullet(oBullet, _x + lengthdir_x(_sep,_dir - 90), _y+ lengthdir_y(_sep,_dir - 90), _dir, _spd, _fac, _creator);
@@ -52,7 +50,9 @@ function create_bullet(_x, _y, _dir, _spd, _fac, _creator, _gun_type){
             break;
             
         default:
-            initialise_bullet(oBullet, _x, _y, _dir, _spd, _fac, _creator);
+            var _sep = 12;
+            initialise_bullet(oBullet, _x + lengthdir_x(_sep,_dir + 90), _y+ lengthdir_y(_sep,_dir + 90), _dir, _spd, _fac, _creator);
+            initialise_bullet(oBullet, _x + lengthdir_x(_sep,_dir - 90), _y+ lengthdir_y(_sep,_dir - 90), _dir, _spd, _fac, _creator);
             break;
     }       
 }

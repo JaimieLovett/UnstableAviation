@@ -22,7 +22,7 @@
   },
   "swatchColours": null,
   "gridX": 4,
-  "gridY": 16,
+  "gridY": 4,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"1e04112e-f189-4974-99a4-cbfd1ac78f42","path":"sprites/sEnemyHunter/sEnemyHunter.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"1e04112e-f189-4974-99a4-cbfd1ac78f42","path":"sprites/sEnemyHunter/sEnemyHunter.yy",},"LayerId":{"name":"3edd465c-b180-441f-ad32-cc6ffde0a97f","path":"sprites/sEnemyHunter/sEnemyHunter.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},

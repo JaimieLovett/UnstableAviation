@@ -6,9 +6,9 @@ sprite_index = choose(
 );
 
 image_speed = 0;
-image_index = irandom_range(0, 1);
+image_index = irandom_range(0, 2);
 
 direction = irandom_range(0, 359);
 image_angle = irandom_range(0, 359);
 
-speed = 1;
+speed = irandom_range(1, 2);

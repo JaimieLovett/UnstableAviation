@@ -1,6 +1,15 @@
-/// @desc Spawn enemies on start.
-if (room == rmGame) {
-	audio_play_sound(sndMusic, 2, true);
+///@desc Initialise Rooms
+if (room == rmStart) {
+	audio_stop_sound(sndGameMusic);
+	audio_play_sound(sndIntroMusic, 2, true);
+}
+else if (room == rmGame) {
+	audio_stop_sound(sndIntroMusic);
+	audio_stop_sound(sndGameOverMusic);
+	audio_play_sound(sndGameMusic, 2, true);
+	
+	global.camera_shake = 0;
+	score = 0;
 
 	spawn_off_camera(oAsteroid, 10);
 	
@@ -11,4 +20,9 @@ if (room == rmGame) {
 	
 	alarm[0] = room_speed * enemy_spawn_speed;
 	alarm[1] = room_speed * enemy_spawn_speed;
+}
+else if (room == rmGameOver) {
+	audio_stop_sound(sndIntroMusic);
+	audio_stop_sound(sndGameMusic);
+	audio_play_sound(sndGameOverMusic, 2, true);
 }

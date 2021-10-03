@@ -19,14 +19,9 @@ switch(room) {
 	
 	case rmGame:
 		draw_text(20, 20, "SCORE: " + string(score));
-
-		draw_set_halign(fa_center);
-		draw_text(global.camera_width/2, global.camera_height-25, "STABILITY: " + string(oPlayer.stability));
-		draw_set_halign(fa_left);
 		break;
 		
 	case rmGameOver:
-		audio_stop_all();
 		draw_set_halign(fa_center);
 		var c = c_red;
 

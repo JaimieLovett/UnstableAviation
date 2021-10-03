@@ -13,6 +13,7 @@ if point_distance(x, y, oPlayer.x, oPlayer.y) < 250 {
 	bullet_counter++;
 	if bullet_counter >= 60 {
 		create_bullet(x, y, image_angle, 4, faction, id, -1);
+		audio_play_sound(sndEnemyShoot, 2, false);
 		bullet_counter = 0;
 	}
 	

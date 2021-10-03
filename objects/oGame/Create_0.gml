@@ -12,7 +12,6 @@ enum factions {
 }
 
 enum powerups {
-	two_bullets,
 	three_bullets,
 	four_bullets,
 	star_bullets,
