@@ -13,9 +13,7 @@ else if (room == rmGame) {
 
 	spawn_off_camera(oAsteroid, 10);
 	
-	spawn_off_camera(oEnemyGrunt, 8);
-	spawn_off_camera(oEnemyHunter, 5);
-	spawn_off_camera(oEnemyTank, 3);
+	spawn_off_camera(oEnemyGrunt, 15);
 
 	
 	alarm[0] = room_speed * enemy_spawn_speed;
