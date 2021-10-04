@@ -27,5 +27,5 @@ var yy = y;
 var c = color;
 
 with (oParticles) {
-	part_particles_create_colour(part_system, xx, yy, part_type_ship_debris, c, 10);	
+	part_particles_create_colour(part_system, xx, yy, part_type_ship_debris, c, 20);	
 }

@@ -11,7 +11,7 @@ if sprite_index == sAsteroidLarge {
 	score += 200;
 	
 	with (oParticles) {
-		part_particles_create(part_system, xx, yy, part_type_asteroid_debris, 24);
+		part_particles_create(part_system, xx, yy, part_type_asteroid_debris, 30);
 	}
 	
 	repeat(2) {
@@ -24,7 +24,7 @@ else if sprite_index == sAsteroidMedium {
 	global.camera_shake = 6;
 	score += 100;
 	with (oParticles) {
-		part_particles_create(part_system, xx, yy, part_type_asteroid_debris, 16);
+		part_particles_create(part_system, xx, yy, part_type_asteroid_debris, 20);
 	}
 	
 	repeat(2) {
@@ -34,7 +34,7 @@ else if sprite_index == sAsteroidMedium {
 }
 else {
 	with (oParticles) {
-		part_particles_create(part_system, xx, yy, part_type_asteroid_debris, 8);
+		part_particles_create(part_system, xx, yy, part_type_asteroid_debris, 12);
 	}
 	
 	audio_play_sound(sndAsteroidExplosion, 2, false);
