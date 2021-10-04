@@ -1,6 +1,14 @@
 ///@desc Initialise Rooms
 if (room == rmStart) {
+	audio_stop_sound(sndIntroMusic);
 	audio_stop_sound(sndGameMusic);
+	audio_stop_sound(sndGameOverMusic);
+	audio_play_sound(sndIntroMusic, 50, true);
+}
+else if (room == rmTutorial) {
+	audio_stop_sound(sndIntroMusic);
+	audio_stop_sound(sndGameMusic);
+	audio_stop_sound(sndGameOverMusic);
 	audio_play_sound(sndIntroMusic, 50, true);
 }
 else if (room == rmGame) {

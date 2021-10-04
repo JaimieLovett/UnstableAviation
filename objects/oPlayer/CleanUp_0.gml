@@ -1,0 +1,9 @@
+audio_stop_sound(sndIgnition);
+audio_stop_sound(sndUnstable);
+audio_stop_sound(sndAsteroidExplosion);
+audio_stop_sound(sndEnemyShoot);
+audio_stop_sound(sndEnemyHurt);
+audio_stop_sound(sndShoot);
+audio_stop_sound(sndPowerupDrop);
+audio_stop_sound(sndPowerupPickup);
+audio_stop_sound(sndShipExplosion);

@@ -7,14 +7,14 @@ switch(room) {
 		draw_set_font(fntTitle);
 		
 		var r_c = c_black;
-		draw_rectangle_color(150, 100, 650, 340, r_c, r_c, r_c, r_c, false);
+		draw_rectangle_color(150, 150, 650, 390, r_c, r_c, r_c, r_c, false);
 		
 		var t_c = c_aqua;
 		draw_text_color(
-			global.camera_width / 2, 100, "UNSTABLE AVIATION", t_c, t_c, t_c, t_c, 1);
+			global.camera_width / 2, 150, "UNSTABLE AVIATION", t_c, t_c, t_c, t_c, 1);
 		
 		oMainMenu.menu_x = global.camera_width / 2;
-		oMainMenu.menu_y = 200;
+		oMainMenu.menu_y = 250;
 		
 		break;
 	
