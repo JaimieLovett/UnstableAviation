@@ -1,8 +1,10 @@
 {
   "resources": [
+    {"id":{"name":"sStarfield_3","path":"sprites/sStarfield_3/sStarfield_3.yy",},"order":24,},
     {"id":{"name":"fntTitle","path":"fonts/fntTitle/fntTitle.yy",},"order":2,},
-    {"id":{"name":"sStarfield_2","path":"sprites/sStarfield_2/sStarfield_2.yy",},"order":11,},
+    {"id":{"name":"sStarfield_4","path":"sprites/sStarfield_4/sStarfield_4.yy",},"order":11,},
     {"id":{"name":"oFactionEnemy","path":"objects/oFactionEnemy/oFactionEnemy.yy",},"order":5,},
+    {"id":{"name":"sStarfield_2","path":"sprites/sStarfield_2/sStarfield_2.yy",},"order":23,},
     {"id":{"name":"sPlayerPowerupsStrip","path":"sprites/sPlayerPowerupsStrip/sPlayerPowerupsStrip.yy",},"order":20,},
     {"id":{"name":"initialise_bullet","path":"scripts/initialise_bullet/initialise_bullet.yy",},"order":2,},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"order":6,},
@@ -58,9 +60,11 @@
     {"id":{"name":"sExhaust","path":"sprites/sExhaust/sExhaust.yy",},"order":21,},
     {"id":{"name":"oEnemyGrunt","path":"objects/oEnemyGrunt/oEnemyGrunt.yy",},"order":0,},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":0,},
+    {"id":{"name":"sStarfield_5","path":"sprites/sStarfield_5/sStarfield_5.yy",},"order":25,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"oAsteroid","path":"objects/oAsteroid/oAsteroid.yy",},"order":0,},
     {"id":{"name":"sndEnemyHurt","path":"sounds/sndEnemyHurt/sndEnemyHurt.yy",},"order":7,},
+    {"id":{"name":"sStarfield_6","path":"sprites/sStarfield_6/sStarfield_6.yy",},"order":26,},
     {"id":{"name":"sndIgnition","path":"sounds/sndIgnition/sndIgnition.yy",},"order":2,},
     {"id":{"name":"sndMenuSelect","path":"sounds/sndMenuSelect/sndMenuSelect.yy",},"order":14,},
     {"id":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},"order":0,},
