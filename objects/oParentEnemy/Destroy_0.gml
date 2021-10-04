@@ -1,18 +1,5 @@
-
-switch(object_index) {
-	case oEnemyGrunt: 
-		score += 50;
-		global.camera_shake = 6;
-		break;
-	case oEnemyHunter:
-		score += 100;
-		global.camera_shake = 6;
-		break;	
-	case oEnemyTank:
-		score += 200;
-		global.camera_shake = 8;
-		break;	
-}
+score += points;
+global.camera_shake = cam_shake;
 
 if (irandom_range(0, 4) == 0) {
 	instance_create_layer(x, y, "Instances", oPowerup);

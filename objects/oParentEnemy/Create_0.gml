@@ -10,3 +10,6 @@ bullet_counter = 0;
 
 exhaust_counter = 0;
 color = $FF19C2;
+
+points = 1;
+cam_shake = 0;
