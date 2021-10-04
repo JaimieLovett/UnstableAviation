@@ -4,16 +4,16 @@ switch(room) {
 		draw_set_halign(fa_center);
 		draw_set_font(fntTitle);
 		
+		var r_c = c_black;
+		draw_rectangle_color(150, 100, 650, 290, r_c, r_c, r_c, r_c, false);
+		
 		var t_c = c_aqua;
 		draw_text_color(
 			global.camera_width / 2, 100, "UNSTABLE AVIATION", t_c, t_c, t_c, t_c, 1);
 		
-		draw_set_font(fntText);
-		var c = c_white;
-		draw_text_color(global.camera_width / 2, 200, "ARROW KEYS: Rotate Ship\nSPACEBAR: Switch between SHOOT/ACCELERATION", c, c, c, c, 1);
-		
 		oMainMenu.menu_x = global.camera_width / 2;
-		oMainMenu.menu_y = 300;
+		oMainMenu.menu_y = 200;
+		
 		break;
 	
 	case rmGame:

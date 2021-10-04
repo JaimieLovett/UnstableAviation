@@ -1,6 +1,6 @@
 menu_x = x;
 menu_y = y;
-button_h = 32;
+button_h = 50;
 
 button[0] = "PLAY GAME";
 button[1] = "EXIT";
