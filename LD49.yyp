@@ -13,6 +13,7 @@
     {"id":{"name":"oParticles","path":"objects/oParticles/oParticles.yy",},"order":8,},
     {"id":{"name":"sEnemyDebris","path":"sprites/sEnemyDebris/sEnemyDebris.yy",},"order":4,},
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},"order":8,},
+    {"id":{"name":"oTutorialMenu","path":"objects/oTutorialMenu/oTutorialMenu.yy",},"order":3,},
     {"id":{"name":"sStarfield_0","path":"sprites/sStarfield_0/sStarfield_0.yy",},"order":9,},
     {"id":{"name":"sndUnstable","path":"sounds/sndUnstable/sndUnstable.yy",},"order":10,},
     {"id":{"name":"oMainMenu","path":"objects/oMainMenu/oMainMenu.yy",},"order":1,},
@@ -47,6 +48,7 @@
     {"id":{"name":"sAsteroidMedium","path":"sprites/sAsteroidMedium/sAsteroidMedium.yy",},"order":16,},
     {"id":{"name":"sndEnemyShoot","path":"sounds/sndEnemyShoot/sndEnemyShoot.yy",},"order":8,},
     {"id":{"name":"sPowerupStrip","path":"sprites/sPowerupStrip/sPowerupStrip.yy",},"order":19,},
+    {"id":{"name":"rmTutorial","path":"rooms/rmTutorial/rmTutorial.yy",},"order":3,},
     {"id":{"name":"sndMenuSwitch","path":"sounds/sndMenuSwitch/sndMenuSwitch.yy",},"order":13,},
     {"id":{"name":"sEnemyGrunt","path":"sprites/sEnemyGrunt/sEnemyGrunt.yy",},"order":7,},
     {"id":{"name":"sEnemyHunter","path":"sprites/sEnemyHunter/sEnemyHunter.yy",},"order":12,},
@@ -81,6 +83,7 @@
     {"roomId":{"name":"rmStart","path":"rooms/rmStart/rmStart.yy",},},
     {"roomId":{"name":"rmGameOver","path":"rooms/rmGameOver/rmGameOver.yy",},},
     {"roomId":{"name":"rmGame","path":"rooms/rmGame/rmGame.yy",},},
+    {"roomId":{"name":"rmTutorial","path":"rooms/rmTutorial/rmTutorial.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

@@ -6,7 +6,7 @@ switch(menu_index) {
 		break;
 		
 	case 1:
-		room_goto(rmTutorial);
+		room_goto(rmStart);
 		break;
 		
 	case 2:

@@ -7,7 +7,7 @@ switch(room) {
 		draw_set_font(fntTitle);
 		
 		var r_c = c_black;
-		draw_rectangle_color(150, 100, 650, 290, r_c, r_c, r_c, r_c, false);
+		draw_rectangle_color(150, 100, 650, 340, r_c, r_c, r_c, r_c, false);
 		
 		var t_c = c_aqua;
 		draw_text_color(
@@ -60,7 +60,7 @@ switch(room) {
 		
 	case rmGameOver:
 		var r_c = c_black;
-		draw_rectangle_color(250, 100, 550, 450, r_c, r_c, r_c, r_c, false);
+		draw_rectangle_color(250, 100, 550, 490, r_c, r_c, r_c, r_c, false);
 	
 		draw_set_halign(fa_center);
 		var c = c_yellow;
@@ -78,7 +78,6 @@ switch(room) {
 			c, c, c, c, 1
 		);
 		
-		
 		// Final score
 		draw_text(
 			room_width/2, 200,
@@ -87,6 +86,43 @@ switch(room) {
 		
 		oGameOverMenu.menu_x = global.camera_width / 2;
 		oGameOverMenu.menu_y = 300;
+		
+		break;
+	case rmTutorial:
+		var r_c = c_black;
+		draw_rectangle_color(120, 35, 680, 560, r_c, r_c, r_c, r_c, false);
+		draw_set_halign(fa_center);
+		
+		// Title
+		draw_set_font(fntTitle);
+		var t_c = c_aqua;
+		draw_text_color(
+			global.camera_width / 2, 40, "TUTORIAL", t_c, t_c, t_c, t_c, 1);
+			
+		// Tutorial text.
+		draw_set_font(fntText);
+		draw_text(
+			global.camera_width/2, 120,
+			"Use the ARROW keys to rotate your ship.",
+		);
+		
+		draw_text(
+			global.camera_width/2, 170,
+			"Your ship has two modes: SHOOT and ACCELERATE.\nPress SPACEBAR to switch between modes.",
+		);
+		
+		draw_text(
+			global.camera_width/2, 240,
+			"Staying in either mode for too long will cause your ship\nto explode so be sure to keep switching between\nmodes before the weapon or engine stability reach 0.",
+		);
+		
+		draw_text(
+			global.camera_width/2, 330,
+			"Switching modes will reset stability to 100%\nand grant you a temporary immunity shield."
+		);
+		
+		oTutorialMenu.menu_x = global.camera_width / 2;
+		oTutorialMenu.menu_y = 420;
 		
 		break;
 }
