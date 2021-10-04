@@ -56,6 +56,21 @@ switch(room) {
 			_engine_stability_text + ": " + string(oPlayer.engine_stability) + "%",
 			_etc, _etc, _etc, _etc, 1);
 		
+		draw_text_color(round(global.camera_width - 20), 170, "POWERUP", label_c, label_c, label_c, label_c, 1);
+		var _powerups;
+		if oPlayer.guns > -1 {
+			_powerups[0] = get_powerup_name(oPlayer.guns);
+			if oPlayer.invincible || oPlayer.shield {
+				_powerups[1] = "INVINCIBLE"
+			}
+		}
+		else if oPlayer.invincible || oPlayer.shield _powerups[0] = "INVINCIBLE"
+		else _powerups[0] = "NONE";
+		
+		var _arr_length = array_length_1d(_powerups);
+		for (var i = 0; i < _arr_length; i++) {
+				draw_text_color(round(global.camera_width - 20), 170 + ((i + 1) * 20), _powerups[i], text_c, text_c, text_c, text_c, 1);		
+		}
 		break;
 		
 	case rmGameOver:

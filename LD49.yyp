@@ -51,6 +51,7 @@
     {"id":{"name":"sndEnemyShoot","path":"sounds/sndEnemyShoot/sndEnemyShoot.yy",},"order":8,},
     {"id":{"name":"sPowerupStrip","path":"sprites/sPowerupStrip/sPowerupStrip.yy",},"order":19,},
     {"id":{"name":"rmTutorial","path":"rooms/rmTutorial/rmTutorial.yy",},"order":3,},
+    {"id":{"name":"get_powerup_name","path":"scripts/get_powerup_name/get_powerup_name.yy",},"order":4,},
     {"id":{"name":"sndMenuSwitch","path":"sounds/sndMenuSwitch/sndMenuSwitch.yy",},"order":13,},
     {"id":{"name":"sEnemyGrunt","path":"sprites/sEnemyGrunt/sEnemyGrunt.yy",},"order":7,},
     {"id":{"name":"sEnemyHunter","path":"sprites/sEnemyHunter/sEnemyHunter.yy",},"order":12,},

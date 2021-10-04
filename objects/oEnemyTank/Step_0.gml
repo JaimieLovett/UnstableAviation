@@ -1,7 +1,5 @@
 event_inherited();
 
-image_index = HP - 1;
-
 // If player is inside range
 if !instance_exists(oPlayer) exit;
 
