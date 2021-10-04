@@ -2,10 +2,8 @@
 
 if keyboard_check_pressed(vk_enter) {
 	switch(room) {
-		case rmStart:
 		case rmGameOver:
 			room_goto(rmGame);
-			lives = 3;
 			break;
 	}
 }

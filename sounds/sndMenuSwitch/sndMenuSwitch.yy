@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.3,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndIgnition.wav",
-  "duration": 25.7102947,
+  "soundFile": "sndMenuSwitch.wav",
+  "duration": 0.18,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sndIgnition",
+  "name": "sndMenuSwitch",
   "tags": [],
   "resourceType": "GMSound",
 }

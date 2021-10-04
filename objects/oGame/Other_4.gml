@@ -12,7 +12,6 @@ else if (room == rmGame) {
 	score = 0;
 
 	spawn_off_camera(oAsteroid, 10);
-	
 	spawn_off_camera(oEnemyGrunt, 15);
 
 	
