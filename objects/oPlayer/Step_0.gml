@@ -1,33 +1,38 @@
 // If stabiltiy reaches 0, game over.
-if stability == 0 {
-	oGame.game_over_reason = "Your weapon stability reached 0 and your ship exploded.";
+if weapon_stability == 0 {
+	oGame.game_over_reason = "Your weapon exploded!";
 	room_goto(rmGameOver)
 }
 
-// If score reaches 2000, our engine becomes unstable.
-if score >= 2000 {
-	unstable_engine = true;
-}
-else {
-	unstable_engine = false;
+if engine_stability == 0 {
+	oGame.game_over_reason = "Your engine exploded!";
+	room_goto(rmGameOver);
 }
 
 // Handle user input.
 if keyboard_check_pressed(vk_space) {
 	is_shooting = !is_shooting;
-	stability = 100;
+	
+	// If we switch to SHOOT mode, reset engine stability and degrade weapon stability.
+	// Else we must be in ACCELERATE mode, reset weapon stability and degrade engine stability.
+	if is_shooting engine_stability = 100;
+	else weapon_stability = 100;
+	
+	// Give the user a shield when switching modes.
 	shield = true;
-	if alarm[6] == -1 {
-		alarm[6] = room_speed * 1;	
+	if alarm[5] == -1 {
+		alarm[5] = room_speed * 1;	
 	}
 }
 
+// Rotate the ship.
 if keyboard_check(vk_left) image_angle = image_angle + 5;
 if keyboard_check(vk_right) image_angle = image_angle - 5;
 
 
 if is_shooting {
 	audio_stop_sound(sndIgnition);
+	
 	// Alarm for reducing stability.
 	if alarm[1] == - 1 {
 		alarm[1] = room_speed * 0.025;	
@@ -45,7 +50,12 @@ if is_shooting {
 }
 else {
 	audio_play_sound(sndIgnition, 1, true);
-	if unstable_engine && alarm[1] == -1 alarm[1] = room_speed * 0.025;		
+	
+	// Alarm for reducing stability.
+	if alarm[1] == - 1 {
+		alarm[1] = room_speed * 0.025;	
+	}
+	
 	// Move the player.
 	motion_add(image_angle, acceleration);
 	if speed > max_speed speed = max_speed;
@@ -68,15 +78,23 @@ else {
 // Wrap to the other side of the screen if we move off the screen.
 move_wrap(true,true,sprite_width / 2);
 
-if stability <= 40 {
+if engine_stability <= 40 || weapon_stability <= 40 {
 	if can_play_unstable_sound {
 		audio_play_sound(sndUnstable, 4, false);
 		can_play_unstable_sound = false;
 		alarm[4] = room_speed * 1;
 	}
+	
+	// Change the ship sprite when stability gets lower.
 	image_index = 1;
 	
-	global.camera_shake = (50 - stability) / 10;
+	// We want to shake the camera as stability gets lower.
+	// So we need to check if it's engine or weapon stability
+	// that is lower than 40 and then use its value to shake the camera.
+	var _stability;
+	if engine_stability <= 40 _stability = engine_stability;
+	else _stability = weapon_stability;
+	global.camera_shake = (50 - _stability) / 10;
 }
 else {
 	image_index = 0;	

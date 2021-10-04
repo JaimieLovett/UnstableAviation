@@ -1,2 +1,3 @@
 /// @desc Decrease stability
-if stability > 0 stability -= 1;
+if weapon_stability > 0 && is_shooting weapon_stability -= 1;
+else if engine_stability > 0 && !is_shooting engine_stability -= 1;

@@ -25,7 +25,7 @@
     {"id":{"name":"sndIntroMusic","path":"sounds/sndIntroMusic/sndIntroMusic.yy",},"order":11,},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"order":0,},
     {"id":{"name":"oFactionAlly","path":"objects/oFactionAlly/oFactionAlly.yy",},"order":4,},
-    {"id":{"name":"fntGame","path":"fonts/fntGame/fntGame.yy",},"order":0,},
+    {"id":{"name":"fntHUD","path":"fonts/fntHUD/fntHUD.yy",},"order":0,},
     {"id":{"name":"scale_canvas","path":"scripts/scale_canvas/scale_canvas.yy",},"order":3,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":1,},
     {"id":{"name":"sndGameOver","path":"sounds/sndGameOver/sndGameOver.yy",},"order":9,},

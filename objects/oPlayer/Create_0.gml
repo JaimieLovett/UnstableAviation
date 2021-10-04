@@ -7,9 +7,8 @@ deceleration = 0.02;
 is_shooting = true;
 can_shoot = true;
 
-stability = 100;
-unstable_engine = false;
-draw_unstable_engine_gui_text = true;
+weapon_stability = 100;
+engine_stability = 100;
 shoot_delay = 0.125;
 bullet_speed = 10;
 

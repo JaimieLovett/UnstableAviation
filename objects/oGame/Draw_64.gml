@@ -17,7 +17,43 @@ switch(room) {
 		break;
 	
 	case rmGame:
-		draw_text(20, 20, "SCORE: " + string(score));
+		// Draw score.
+		var label_c = c_yellow;
+		var text_c = c_white;
+		draw_set_font(fntHUD);
+		draw_text_color(20, 20, "SCORE", label_c, label_c, label_c, label_c, 1);
+		draw_text_color(20, 40, string(score), text_c, text_c, text_c, text_c, 1);
+		
+		// Draw ship mode.
+		draw_set_halign(fa_right);
+		draw_set_font(fntHUD);
+		
+		var _mode_text = oPlayer.is_shooting ? "SHOOT" : "ACCELERATE";
+		draw_text_color(round(global.camera_width - 20), 20, "MODE", label_c, label_c, label_c, label_c, 1);
+		draw_text_color(round(global.camera_width - 20), 40, _mode_text, text_c, text_c, text_c, text_c, 1);		
+		
+		// Draw weapon stability.
+		var _weapon_stability_text = oPlayer.weapon_stability < 40 ? "UNSTABLE" : "STABLE";
+		var _wtc = oPlayer.weapon_stability < 40 ? c_red : c_white;
+		
+		draw_text_color(round(global.camera_width - 20), 70, "WEAPON", label_c, label_c, label_c, label_c, 1);
+		
+		draw_text_color(
+			round(global.camera_width - 20), 90,
+			_weapon_stability_text + ": " + string(oPlayer.weapon_stability) + "%",
+			_wtc, _wtc, _wtc, _wtc, 1);
+		
+		// Draw engine stability
+		var _engine_stability_text = oPlayer.engine_stability < 40 ? "UNSTABLE" : "STABLE";
+		var _etc = oPlayer.engine_stability < 40 ? c_red : c_white;
+		
+		draw_text_color(round(global.camera_width - 20), 120, "ENGINE", label_c, label_c, label_c, label_c, 1);
+		
+		draw_text_color(
+			round(global.camera_width - 20), 140,
+			_engine_stability_text + ": " + string(oPlayer.engine_stability) + "%",
+			_etc, _etc, _etc, _etc, 1);
+		
 		break;
 		
 	case rmGameOver:
