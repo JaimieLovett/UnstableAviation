@@ -3,6 +3,8 @@ event_inherited();
 speed = 2;
 direction = random_range(0, 359);
 image_angle = direction;
+image_speed = 0;
+image_index = 0;
 
 HP = 1;
 original_speed = speed;

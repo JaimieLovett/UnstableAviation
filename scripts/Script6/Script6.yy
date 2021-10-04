@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "get_powerup_name",
+  "name": "Script6",
   "tags": [],
   "resourceType": "GMScript",
 }

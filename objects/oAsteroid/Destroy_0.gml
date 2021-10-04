@@ -41,3 +41,4 @@ else {
 	global.camera_shake = 4;	
 	score += 50;
 }
+screen_freeze(global.screen_freeze_duration);
