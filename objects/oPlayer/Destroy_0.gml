@@ -8,5 +8,4 @@ with (oParticles) {
 }
 
 audio_play_sound(sndGameOver, 2, false);
-
 room_goto(rmGameOver);

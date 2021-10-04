@@ -1,7 +1,7 @@
 // If stabiltiy reaches 0, game over.
 if weapon_stability == 0 {
 	oGame.game_over_reason = "Your weapon exploded!";
-	room_goto(rmGameOver)
+	room_goto(rmGameOver);
 }
 
 if engine_stability == 0 {

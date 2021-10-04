@@ -1,5 +1,5 @@
 /// @desc Init variables
-global.screen_freeze_duration = 25;
+global.screen_freeze_duration = 15;
 score = 0;
 enemy_spawn_speed = 1;
 game_over_reason = "";

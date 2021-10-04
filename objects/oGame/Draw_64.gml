@@ -7,11 +7,8 @@ switch(room) {
 		draw_set_font(fntTitle);
 		
 		var r_c = c_black;
-		draw_rectangle_color(150, 150, 650, 390, r_c, r_c, r_c, r_c, false);
-		
-		var t_c = c_aqua;
-		draw_text_color(
-			global.camera_width / 2, 150, "UNSTABLE AVIATION", t_c, t_c, t_c, t_c, 1);
+		draw_rectangle_color(150, 100, 650, 390, r_c, r_c, r_c, r_c, false);
+		draw_sprite(sLogo, 0, global.camera_width / 2, 150);
 		
 		oMainMenu.menu_x = global.camera_width / 2;
 		oMainMenu.menu_y = 250;
@@ -110,9 +107,8 @@ switch(room) {
 		
 		// Title
 		draw_set_font(fntTitle);
-		var t_c = c_aqua;
-		draw_text_color(
-			global.camera_width / 2, 40, "TUTORIAL", t_c, t_c, t_c, t_c, 1);
+		draw_sprite(sTutorialLogo, 0, global.camera_width / 2, 70);
+
 			
 		// Tutorial text.
 		draw_set_font(fntText);
