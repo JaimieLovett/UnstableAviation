@@ -37,6 +37,7 @@
     {"id":{"name":"sndGameOver","path":"sounds/sndGameOver/sndGameOver.yy",},"order":9,},
     {"id":{"name":"sAsteroidSmall","path":"sprites/sAsteroidSmall/sAsteroidSmall.yy",},"order":15,},
     {"id":{"name":"sTutorialLogo","path":"sprites/sTutorialLogo/sTutorialLogo.yy",},"order":29,},
+    {"id":{"name":"sGameOverTitle","path":"sprites/sGameOverTitle/sGameOverTitle.yy",},"order":30,},
     {"id":{"name":"spawn_off_camera","path":"scripts/spawn_off_camera/spawn_off_camera.yy",},"order":0,},
     {"id":{"name":"sndAsteroidExplosion","path":"sounds/sndAsteroidExplosion/sndAsteroidExplosion.yy",},"order":1,},
     {"id":{"name":"sBullet","path":"sprites/sBullet/sBullet.yy",},"order":1,},

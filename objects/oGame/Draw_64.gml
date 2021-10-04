@@ -4,7 +4,6 @@ draw_set_color(c_white);
 switch(room) {
 	case rmStart:
 		draw_set_halign(fa_center);
-		draw_set_font(fntTitle);
 		
 		var r_c = c_black;
 		draw_rectangle_color(150, 100, 650, 390, r_c, r_c, r_c, r_c, false);
@@ -72,16 +71,13 @@ switch(room) {
 		
 	case rmGameOver:
 		var r_c = c_black;
-		draw_rectangle_color(250, 100, 550, 490, r_c, r_c, r_c, r_c, false);
+		draw_rectangle_color(150, 70, 650, 490, r_c, r_c, r_c, r_c, false);
 	
 		draw_set_halign(fa_center);
 		var c = c_yellow;
 		
 		// Title
-		draw_set_font(fntTitle);
-		var t_c = c_red;
-		draw_text_color(
-			global.camera_width / 2, 100, "GAME OVER!", t_c, t_c, t_c, t_c, 1);
+		draw_sprite(sGameOverTitle, 0, global.camera_width / 2, 100);
 
 		// Game over reason
 		draw_set_font(fntText);
@@ -106,7 +102,6 @@ switch(room) {
 		draw_set_halign(fa_center);
 		
 		// Title
-		draw_set_font(fntTitle);
 		draw_sprite(sTutorialLogo, 0, global.camera_width / 2, 70);
 
 			
