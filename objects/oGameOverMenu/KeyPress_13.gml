@@ -6,6 +6,10 @@ switch(menu_index) {
 		break;
 		
 	case 1:
+		room_goto(rmStart);
+		break;
+		
+	case 2:
 		game_end();
 		break
 }

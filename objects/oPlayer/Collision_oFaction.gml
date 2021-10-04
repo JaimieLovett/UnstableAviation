@@ -6,4 +6,5 @@ else if invincible || shield {
 	}
 	exit;
 }
+
 event_perform(ev_other, ev_user1);

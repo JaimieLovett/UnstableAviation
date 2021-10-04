@@ -1,5 +1,3 @@
-oGame.game_over_reason = "You collided with an enemy ship."
-
 // Particle FX.
 var xx = x;
 var yy = y;

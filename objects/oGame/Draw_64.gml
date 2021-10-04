@@ -1,4 +1,6 @@
 /// @desc Draw GUI
+draw_set_color(c_white);
+
 switch(room) {
 	case rmStart:
 		draw_set_halign(fa_center);
@@ -57,28 +59,34 @@ switch(room) {
 		break;
 		
 	case rmGameOver:
+		var r_c = c_black;
+		draw_rectangle_color(250, 100, 550, 450, r_c, r_c, r_c, r_c, false);
+	
 		draw_set_halign(fa_center);
-		var c = c_red;
+		var c = c_yellow;
+		
+		// Title
+		draw_set_font(fntTitle);
+		var t_c = c_red;
+		draw_text_color(
+			global.camera_width / 2, 100, "GAME OVER!", t_c, t_c, t_c, t_c, 1);
 
-		draw_text_ext_transformed_color(
-			room_width/2, 50, game_over_reason,
-			20, 250, 2, 2, 0, c, c, c, c, 1
+		// Game over reason
+		draw_set_font(fntText);
+		draw_text_color(
+			global.camera_width / 2, 150, game_over_reason,
+			c, c, c, c, 1
 		);
 		
+		
+		// Final score
 		draw_text(
 			room_width/2, 200,
 			"FINAL SCORE: " + string(score),
 		);
 		
-		draw_text(
-			room_width/2, 250,
-			">> PRESS ENTER TO RESTART <<",
-		);
+		oGameOverMenu.menu_x = global.camera_width / 2;
+		oGameOverMenu.menu_y = 300;
 		
-		draw_text(
-			room_width/2, 300,
-			">> PRESS ESC TO RETURN TO START SCREEN <<",
-		);
-		draw_set_halign(fa_left);
 		break;
 }

@@ -1,1 +1,0 @@
-audio_play_sound(sndMenuSelect, 1, false);
