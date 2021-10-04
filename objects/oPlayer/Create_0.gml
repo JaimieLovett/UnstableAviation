@@ -4,6 +4,7 @@ event_inherited();
 max_speed = 3;
 acceleration = 0.2;
 deceleration = 0.02;
+degrade_speed = 0.025;
 is_shooting = true;
 can_shoot = true;
 
@@ -19,6 +20,7 @@ shield = false;
 exhaust_counter = 0;
 
 can_play_unstable_sound = true;
+is_space_pressed = false;
 
 color = $00FFFF;
 

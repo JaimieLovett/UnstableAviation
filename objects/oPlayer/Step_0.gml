@@ -9,8 +9,16 @@ if engine_stability == 0 {
 	room_goto(rmGameOver);
 }
 
+if score >= 2000 {
+	degrade_speed = 0.025;	
+}
+else {
+	degrade_speed = 0.05;	
+}
+
 // Handle user input.
 if keyboard_check_pressed(vk_space) {
+	is_space_pressed = true;
 	is_shooting = !is_shooting;
 	
 	// If we switch to SHOOT mode, reset engine stability and degrade weapon stability.
@@ -34,8 +42,8 @@ if is_shooting {
 	audio_stop_sound(sndIgnition);
 	
 	// Alarm for reducing stability.
-	if alarm[1] == - 1 {
-		alarm[1] = room_speed * 0.025;	
+	if alarm[1] == - 1 && is_space_pressed {
+		alarm[1] = room_speed * degrade_speed;	
 	}
 	
 	if can_shoot {
@@ -52,8 +60,8 @@ else {
 	audio_play_sound(sndIgnition, 1, true);
 	
 	// Alarm for reducing stability.
-	if alarm[1] == - 1 {
-		alarm[1] = room_speed * 0.025;	
+	if alarm[1] == - 1 && is_space_pressed {
+		alarm[1] = room_speed * degrade_speed;	
 	}
 	
 	// Move the player.
