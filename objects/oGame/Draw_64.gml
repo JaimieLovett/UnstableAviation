@@ -12,6 +12,9 @@ switch(room) {
 		oMainMenu.menu_x = global.camera_width / 2;
 		oMainMenu.menu_y = 250;
 		
+		var t_c = c_aqua;
+		draw_text_color(global.camera_width / 2, 500, "created by IcedJaM", t_c, t_c, t_c, t_c, 1);
+		
 		break;
 	
 	case rmGame:
